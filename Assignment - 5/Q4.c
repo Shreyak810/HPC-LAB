@@ -1,7 +1,5 @@
-#include <iostream>
+#include <stdio.h>
 #include <omp.h>
-
-using namespace std;
 
 int main() {
     int n = 20;
@@ -22,10 +20,7 @@ int main() {
         total_sum += partial_sum;
     }
 
-    cout << "Total sum: " << total_sum << endl;
+    printf("Total sum: %d\n", total_sum);
 
     return 0;
 }
-
-
-
